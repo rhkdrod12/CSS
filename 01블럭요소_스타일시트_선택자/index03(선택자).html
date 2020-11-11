@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 전역 선택자: *{}  모든 태그에 디자인을 적용 */
+
+        /* 태그 선택자: [태그명]{}  해당 태그명을 가지고 있는 모든 태그에 디자인을 적용*/
+        b{color: rgb(131, 151, 175);}
+
+        /* 다중 선택자: 선택자1, 선택자2, 선택자3{} 적은 선택자들에 모두에 디자인을 적용 */
+        ul, li{list-style: none; color: darkolivegreen;}
+
+        /* 하위 선택자: [선택자1] [선택자2] 선택자1 안에 있는 모든 선택자2에 디자인을 적용 */
+        div a{color: blue;}
+        /* 자식 선택자: [부모]>[자식선택자] 부모태그의 바로 아래있는 경우에만 디자인을 적용 */
+        div>b{color: brown;}
+        /* 클래스 선택자: .[클래스명] 해당 클래스명을 가진 모든 태그에 디자인을 적용 */
+        .b1{color: cadetblue}
+        /* 아이디 선택자: #[아이디명] 해당 아이디명을 가진 태그에 디자인을 적용(아이디는 해당페이지에서 중복될 수 없음) */
+        #a1{color: chartreuse;}
+        
+        .abox{
+            color: cyan;
+        }
+
+        .abox p{
+            color: red;
+        }
+        div b{color:rgba(25, 12, 211, 0.452)}
+    </style>
+
+</head>
+<body>
+    
+    <b>태그선택자</b>
+    <ul>
+        <li>다중선택자</li>
+        <li>다중선택자2</li>
+    </ul>
+
+    <div>
+        <div><a href="">div안의 div안의 a태그</a></div>
+        <a href="">a태그</a>
+    </div>
+
+    <div>
+        <form><b>div안의 form안의 b태그</b></form>> 
+        <b>div안의 b태그</b>
+    </div>
+
+    <p id="a1">아이디 선택자는 #</p>
+    <p class="b1">클래스 선택자는 .</p>
+
+    <div class="abox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <ul>    
+            <li><p>하위선택자 li안에 p가 있기 때문에 li가 적용되고 p가 적용되기 때문에 레드가 적용된것임</p></li>
+            <li><p>하위선택자</p></li>
+        </ul>
+
+    </div>
+    
+    <ul>
+        <li><div class="abox">test1</div></li>
+        <li><div>test2</div></li>
+        <li><div>test3</div></li>
+        <li><div>test4 선택자의 적용순서는 밖의 부모부터 아래로 차례차례 적용, </div></li>
+    </ul>
+
+    <hr>
+
+    <div class="abox">
+        <p>음음?</p>
+        <p><b>자식 선택자 -> p안에 b인데 b가 스타일이 있으므로 b스타일 적용</b></p>
+        <b>선택!!!-> div>b 이므로 div>b가 적용되어 해당색상 적용, b스타일은 무시당했네.? 한마디로 자식 선택자가 우선이라는 거군</b>
+    </div>
+
+</body>
+</html>

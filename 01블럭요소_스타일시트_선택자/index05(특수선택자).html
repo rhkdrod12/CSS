@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 가상 선택자 */
+        /* 부모에 클래스를 지정하고 접근하는 방식이 좀더 좋은 문법형태 */
+
+        /* :hover : 해당 태그 위치에 마우스가 올라갔을 때 디자인 실행 */
+        .list>li>a:hover{
+            background-color: yellow;
+            color:red;
+        }
+
+        /* :focus : 해당 태그가 선택되었을 때 디자인 적용 */
+        .inner>input:focus{
+            background-color: yellow;
+        }
+
+        /* :active : 해당 태그가 활성화 되었을 때 디자인 적용 */
+        .title:active{
+            background-color: yellow;
+        }
+
+        .aaa:active{
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h3>:hober 선택자</h3>
+    <div>
+        <ul class="list">
+            <li><a href="#">목록1</a></li>
+            <li><a href="#">목록2</a></li>
+            <li><a href="#">목록3</a></li>
+        </ul>
+    </div>
+
+    <h3>:focus 선택자</h3>
+    <div class="inner">
+        <input type="text" >
+    </div>
+
+    <h3>:active 선택자</h3>
+    <p class="title">active </p>
+
+    <select class="aaa">
+        <option value="test">test1</option>
+        <option value="test">test2</option>
+        <option value="test">test3</option>
+    </select>
+
+</body>
+</html>
+

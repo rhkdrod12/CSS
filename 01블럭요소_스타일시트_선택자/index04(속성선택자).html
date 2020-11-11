@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 특정 속성에 해당 값을 지닌 경우 디자인 적용 */
+        input[name="ttt"] {
+            color: royalblue;
+        }
+        /* 특정 속성에 값이 해당값을 포함하는 경우 디자인 적용 */
+        li[class*="col"] {
+            color: darkgreen
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <input type="text" name="ttt" value="가" /><br/>
+        <input type="text" name="ttt" value="나" /><br/>
+        <input type="text" name="ttt" value="다" /><br/>
+    </div>
+
+    <div>
+        <ul>
+            <li class="col-1">리스트1</li>
+            <li class="col-2">리스트2</li>
+            <li class="col-3">리스트3</li>
+            <li class="col-4">리스트4</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html> 

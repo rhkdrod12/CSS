@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+        p{color: red;}
+        
+        h1,h2,h3,h4{
+            color: tomato;
+        }
+        
+        div strong{
+            color: yellow;
+        }
+
+        div>i{
+            color: violet;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p>내부 스타일 시트</p>
+
+    <span>외부 스타일 시트</span>
+
+
+    <p style="color: seagreen; font-size: large;">인라인 스타일 시트, 인라인이기 떄문에 최우선적으로 적용됨</p>
+
+    <div>우선순위 : 인라인 <- 내부스타일시트 <- 외부스타일시트 순으로 적용됨</div>
+    <div>해당 내용이 있으면 덮어씌우게 됨</div>
+
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+
+    <div><strong>div strong 형태: test!!!</strong></div>
+
+    <strong>여기는 적용 안됨!!</strong>
+
+    <div>
+        <i>div 바로 아래 i가 있어서 적용됨</i><br/>
+        <b><i>div 아래 div 아래 i 여기는 적용 안됨</i></b>
+    </div>
+
+</body>
+</html>

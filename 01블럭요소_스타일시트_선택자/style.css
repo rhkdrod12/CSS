@@ -1,0 +1,10 @@
+
+@import url("common.css");
+
+span { color: blue;}
+
+/* 
+css파일간에 import가 가능 
+
+@import("경로"); 를 사용해 import
+*/
