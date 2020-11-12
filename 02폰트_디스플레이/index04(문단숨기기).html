@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        p {
+            border: 1px solid #777;
+            width: 300px;
+            height: 300px;
+        }
+
+        /* 넘치는 데이터를 잘라버림, 데이터가 손실됨 */
+        .tx1 {
+            overflow: hidden;
+        }
+
+        /* 데이터가 모두 표기되어야하는 경우에 스크롤를 만들어 표기, 무조건 스크롤이 표기됨 */
+        .tx2 {
+            overflow: scroll;
+        }
+
+        /* 데이터가 넘치면 스크롤를 만들고 데이터가 넘치지 않으면 스크롤를 미표기, 자동 처리 */
+        .tx3 {
+            overflow: auto;
+        }
+
+        /* 데이터가 넘치더라도 따로 처리하지 않고 넘치도록 표기함 */
+        .tx4 {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 아이템이 블럭의 사이즈를 넘어가게 되면 오버클럭이 발생(디자인을 넘어서 표기하게 됨) -->
+    <p class="tx1">centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display: inline-block이 적용된다. 단, Firefox 2에서는
+        inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지 않는 브라우저는 display: table과 margin을
+        적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어 가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]!</p>
+    <p class="tx2">centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display: inline-block이 적용된다. 단, Firefox 2에서는
+        inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지 않는 브라우저는 display: table과 margin을
+        적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어 가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]!</p>
+    <p class="tx3">centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display: inline-block이 적용된다. 단, Firefox 2에서는
+        inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지 않는 브라우저는 display: table과 margin을
+        적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어 가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+        inline-block이 적용된다. 단, Firefox 2에서는 inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지
+        않는 브라우저는 display: table과 margin을 적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어
+        가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]!</p>
+    <p class="tx3">auto는 글자양이 적으면 스크롤이 만들어지지 않습니다.</p>
+
+    <p class="tx4">centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display: inline-block이 적용된다. 단, Firefox 2에서는
+        inline-block을 이해하지 못하므로 그 전에 적힌 display: table이 적용된다. 그래서 inline-block을 지원하지 않는 브라우저는 display: table과 margin을
+        적용받아 가운데 정렬이 되고, 나머지 브라우저에서는 text-align: center와 display: inline-block이 적용되어 가운데 정렬이 된다.
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]centered 클래스에 display 속성이 두 번 사용되었는데, 이 경우 마지막에 쓰여진 display:
+
+        출처: https://webdir.tistory.com/31 [WEBDIR]!</p>
+</body>
+
+</html>

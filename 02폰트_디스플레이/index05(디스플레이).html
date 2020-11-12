@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 
+        인라인 요소는 width와 heigh 속성이 없음!!
+        따라서 vertical-align도 없음!
+        */
+        .list>.inner {
+            display: inline;
+        }
+
+        .list>span,
+        .list>strong,
+        .list>small {
+            border: 1px solid;
+            display: block;
+        }
+
+        /* 
+        크기에 대한 지정은 블럭만 가능, 인라인은 불가능함 
+        inline-block : 기본 구성은 인라인에 블럭의 성질을 넣는 기능
+        크기지정, 정렬 기능이 가능해짐
+        */
+        .list>a {
+            display: inline-block;
+
+            border: 1px solid #777;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+
+            line-height: 50px;
+
+
+        }
+
+        /* display: none;  */
+        .box {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="list">
+        <div class="inner">div안의 div!</div>
+        <div class="inner">div안의 div!</div>
+        <div class="inner">div안의 div!</div>
+    </div>
+
+    <div class="list">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <small>인라인</small>
+    </div>
+
+    <div class="list">
+        <a href="#">인라인1</a>
+        <a href="#">인라인2</a>
+        <a href="#">인라인3</a>
+    </div>
+
+    <div class="box"">
+        아이디 비밀번호를 확인해주세요.
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 정렬은 인라인 요소에 적용 안됨!!!, 인라인 요소는 공간을 가지고 있지 않음!!*/
+        p {
+            border: 1px solid #777;
+            /* 전부 적용할 떄, 개별적으로 적용하지 않을 떄 이와같이 사용 */
+            /* 띄어쓰기를 기준으로 적용하게 됨 */
+
+        }
+
+        .tx1 {
+            text-align: left;
+        }
+
+        .tx2 {
+            text-align: center;
+        }
+
+        .tx3 {
+            text-align: right;
+        }
+
+        .tx4 img{
+            vertical-align: top;
+        }
+        .tx5 img{
+            vertical-align: middle;
+        }
+        .tx6 img{
+            vertical-align: bottom;
+        }
+
+        /* 기준이 되는 태그가 없을 때, 박스 높이와 line-height를 동일하게 맞추면 문단 가운데 정렬 */
+        .box{
+            border: 1px solid #777;
+            height: 100px;
+            width:  100px;
+            margin-left: 50%;
+            margin-right: 50%;       
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .box div{
+            vertical-align: middle;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <p class="tx1">안녕하세요.</p>
+    <p class="tx2">안녕하세요.</p>
+    <p class="tx3">안녕하세요.</p>
+
+    <p class="tx4">
+        안녕하세요.
+        <img src="img/css3.png" alt="css3"> <!-- 이미지는 inline 요소!, 이렇게 비교대상이 있을 때 vertical align을 사용할 수 있음 -->
+        흠흠흠..  이건 좀 알아봐야겠네.
+        <!-- tx4 img를 기준으로 주변 애들을 정렬함 -->
+    </p>
+
+    <p class="tx5">
+        테스트!
+        <img src="img/html5.png" alt="html5">
+        임마 내가 그으
+    </p>
+
+    <p class="tx6">
+        테스트!
+        <img src="img/jquery.png" alt="jquery">
+        느그 서장이랑
+    </p>
+
+    <div class="box">
+        <div>hello world!</div>
+    </div>
+</body>
+
+</html>

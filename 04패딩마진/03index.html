@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(img/bg_grid.jpg);
+        }
+        p{
+            width: 600px;
+            min-height: 100px;
+            border: 1px solid;
+
+            margin: 10px 10px 10px 10px;
+        }
+
+        .ct{
+            /* 
+            위아래 0, 왼쪽오른쪽은 auto : 박스를 가운데 정렬할 때 많이 사용되는 방식, 
+            블록크기가 지정되어있어야만 가능 
+            */
+            margin: 0 auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <p>
+        마진은 요소의 바깥여백, 테두리와 다른 박스사이의 여백을 의미, 주황색으로 표기됨<br>
+        마진은 겹치는게 가능
+    </p>
+
+    <p class="ct">
+        마진은 요소의 바깥여백, 테두리와 다른 박스사이의 여백을 의미, 주황색으로 표기됨<br>
+        마진은 겹치는게 가능<br>
+        다른 박스와의 간격을 의미하므로 마진은 다른 박스와 간격만 나오면 되므로 겹치는것처럼 보일 수 있음
+    </p>
+
+    
+
+</body>
+</html>

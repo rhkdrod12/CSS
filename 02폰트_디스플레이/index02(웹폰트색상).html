@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nanum+Pen+Script&family=Source+Serif+Pro&display=swap"
+        rel="stylesheet">
+
+    <!-- 스타일은 위에부터 아래로 적용되며, 맨 아래가 가장 마지막에 적용됨 -->
+    <style>
+      
+        * {
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Nanum Pen Script', cursive;
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1.2em;
+            color: darkcyan;
+        }
+
+        p{
+            color: red;            
+            letter-spacing: 5px; /*글자 사이 간격*/         
+        }
+        .it{
+            color: seagreen;
+        }
+        div{
+            color: tan;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        우선순위는 항상 안쪽 태그에 적용된 디자인이 더 높으며, 태그의 class, id가 더 높음 
+        범위가 좁을 수록 우선순위가 더 높음
+    -->
+    <div>폰트를 적용하였습니다.</div>
+    <div class="it">폰트를 적용하였습니다.</div>
+    <p>폰트를 적용하였습니다.</p>
+    
+</body>
+
+</html>
