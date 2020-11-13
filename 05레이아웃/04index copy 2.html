@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 50%;            
+            margin: 0 auto;                
+        }
+        .img-box{
+            grid-row: 1/3;
+            border: 1px solid;
+            border-right: 0px;
+        }
+        .content{
+            border: 1px solid;
+        }
+        .content-bottom{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            border: 1px solid;
+            border-top: 0px;
+        }
+        .content-bottom .left{
+            text-align: left;
+        }
+        .content-bottom .right{
+            text-align: right;
+        }
+        .content-bottom .content-button, input{
+            
+            width: 100%;
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div class="box">
+        <div class="img-box">
+            <div>사진</div>
+        </div>
+        
+        <div class="content">           
+            <div>제목: 패팅바텀 50px;</div>
+            <div>내용: gg</div>
+        </div>
+        <div class="content-bottom">
+            <div class="left">가격</div>
+            <div class="right">10000원</div>
+            
+            <div class="content-button">
+                <div><input type="button" value="장바구니"></div>                    
+            </div>  
+            <div class="content-button">
+                <div><input type="button" value="구매하기"></div>                    
+            </div>  
+        </div>   
+
+    </div>
+
+
+</body>
+</html>

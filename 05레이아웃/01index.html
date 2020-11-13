@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style-type: none;
+           
+        }
+
+        .boxlist li {
+            float: left;
+            width: 16.6666%;
+            
+            box-sizing: border-box; /* 기존에는 border가 boxsize에 포함되어있지 않음, 하지만 표기는 border도 포함되기 때문에 해당 옵션을 쓰게 되면 border를 박스 사이즈에 포함해서 연산 */
+            
+            border-bottom: 1px solid;
+            padding: 30px;
+
+            text-align: center;
+            
+        }
+        .boxlist li a{
+            text-decoration: none;
+        }
+
+        /* .boxlist::after{content: ""; display: block; clear: both;} */
+        .boxlist{overflow: hidden;}
+        
+        /* #content:after { content: " "; display: block; clear: both; } */
+        /* 아래에서 p태그 대신에 넣을 수
+        있는 것 */
+    </style>
+
+</head>
+
+<body>
+    <!--
+        float이 적용되게 되면 float을 초기화하기 전까지는 다른 테그까지 같이 적용됨
+        flaot을 제거하는 문법이 들어가야하며 해당 문법이 clear임
+     -->
+     
+    <section>
+        <!-- 
+            이렇게 배치하게 되면 float으로 인해 height가 지정되지 않았음 
+            부모컨텐츠 높이가 지정이 안되는 현상이 있음
+            float을 해제시키는 작업과 반드시 같이 사용되어야함
+
+            1.가상요소 방법
+            .boxlist::after{content: ""; display: block; clear: both;} -> 가상요소를 넣어 float을 제거함
+
+            2.부모요소에 overflow:hidden
+            .boxlist{overflow: hidden;} -> 해당 문법이 들어가게되면 자동적으로 넘치는 것을 짤라내기 떄문에 flaot문법이 제거됨?
+         -->
+        <ul class="boxlist">
+            <li><a href="#">블럭1</a></li>
+            <li><a href="#">블럭2</a></li>
+            <li><a href="#">블럭3</a></li>
+            <li><a href="#">블럭4</a></li>
+            <li><a href="#">블럭5</a></li>
+            <li><a href="#">블럭6</a></li>
+      
+        </ul>
+
+        <p>테스트</p>
+    </section>
+
+</body>
+
+</html>

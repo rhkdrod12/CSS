@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box{
+            width: 50%;        
+            margin: 0 auto;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .box .img-box{
+            width: 50%;    
+            height: 100%;                    
+            float: left;   
+            /* border: 1px solid; */
+            border-right: 0px;
+            box-sizing: border-box;
+        }
+        .box .content{
+
+            width: 50%;    
+            height: 100%;
+            float: left; 
+            box-sizing: border-box;       
+            
+            border: 1px solid;
+        }
+
+        .box .content .content-middle{
+            padding-top: 50px;
+            border-top: 1px solid;
+            overflow: hidden;
+        }    
+        .box .content .content-bottom{            
+            overflow: hidden;           
+        }
+        .width{
+            width: 50%;
+        }
+        .right{            
+            float: right;            
+        }
+        .left{                          
+            float: left;
+        }
+        input{
+            width: 100%;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div class="box">
+        <div class="img-box">
+            <div>사진</div>
+        </div>
+        
+        <div class="content">           
+            <div class="content-top">
+                <div>제목: 패팅바텀 50px;</div>
+                <div>내용: gg</div>
+            </div>
+
+            <div class="content-middle">
+                <div class="left">가격</div>
+                <div class="right">10000원</div>
+            </div>    
+
+            <div class="content-bottom">
+                <div class="left width"><input type="button" value="장바구니"></div>
+                <div class="left width"><input type="button" value="구매하기"></div>
+            </div>            
+        </div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .list {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid;
+            overflow: hidden;
+        }
+
+        .list .inner {
+            border: 1px solid;
+            width: 25%;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .inner .content {
+            overflow: hidden;
+
+        }
+
+        .inner .content .left {
+            float: left;
+        }
+
+        .inner .content .right {
+            float: right;
+        }
+
+        .list2 {
+            margin: 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            
+
+        }
+
+        .list2 div {
+            box-sizing: border-box;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        .clear{
+            clear: both;    /* float 속성을 끝내는 property */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="list">
+        <div class="inner">
+            <img src="img/bgimg.png" alt="bgimg">
+
+            <div class="content">
+                <div class="left">  <!-- float으로 블록을 왼쪽으로 연결 -->
+                    <div>좌측1</div>    
+                    <div>좌측2</div>
+                    <div>좌측3</div>
+                </div>
+                <div class="right"> <!-- float으로 블록을 오른쪽으로 연결 -->
+                    <div>우측1</div>
+                </div>
+
+                <div class="clear"> <!-- clear:both 로 float 해제 -->
+                    데이터
+                </div>
+            </div>
+
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="bgimg">
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="bgimg">
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="bgimg">
+        </div>
+    </div>
+
+    <div>
+
+        내용물
+    </div>
+
+    <div class="list2">
+        <div>
+            <div style="height: 50%; box-sizing: border-box;">test1</div>
+            <div style="height: 50%; box-sizing: border-box;">test1</div>
+        </div>
+        <div>
+            <div>test2</div>
+            <div>test2</div>
+            <div>test2</div>
+            <div>test2</div>
+            <div>test2</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 80%;
+            border: 1px solid;
+            margin: 0px auto;
+        }
+
+        .box .middle {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .box .middle .child {
+            border: 1px solid;
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+        }
+
+        .bottom {            
+            border: 1px solid;
+        }
+
+        .top {
+            border: 1px solid;
+        }
+
+        /* 그리드 연습 */
+        .grid {
+            width: 80%;
+            border: 1px solid;
+            margin: 0px auto;
+        }
+
+        .grid .grid-middle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 20px 0;
+        }
+
+        .grid .grid-middle div {
+            border: 1px solid;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">탑</div>
+
+        <div class="middle">
+            <div class="child">중간 패딩 위아래</div>
+            <div class="child">중간 패딩 위아래</div>
+        </div>
+
+        <div class="bottom" style="clear:both;">바텀</div>
+    </div>
+
+    <hr>
+
+    <div class="grid">
+        <div class="top">탑</div>
+        <div class="grid-middle">
+            <div>중간 패딩 위아래</div>
+            <div>중간 패딩 위아래</div>
+        </div>
+        <div class="bottom">바텀</div>
+
+    </div>
+
+
+</body>
+
+</html>
