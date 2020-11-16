@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        
+
+        /* 미디어 쿼리는 화면사이즈에 따라서 다르게 동작하도록 처리 */
+        @media (min-width: 768px) and (max-width: 1000px){
+            .box1{border: 1px solid;}
+        }
+        /* 최대사이즈가 767이므로 767미만 사이즈에서 해당 css가 동작하게 됨 */        
+        @media (max-width: 767px){
+            .box1{display: none;}
+        }
+
+        /* box2미디어 */
+        /* 미디어 쿼리안의 디자인은 일반적으로 퍼센트를 사용, 크기에 따라 다르게 반응해야하므로 */
+        .box2{width: 100%; margin: 0 auto; overflow: hidden;}
+        .box2 .inner{float: left; width: 16.6666%;}
+        .box2 .inner{border: 1px solid; box-sizing: border-box; text-align: center;}
+
+        @media (min-width: 1300px){
+            .box2 .inner{width: 16.6666%; float: left;}
+        }
+        @media (max-width: 1299px) and (min-width: 768px){
+            .box2 .inner{width: 33.3333%; float: left;}
+        }
+
+        @media (max-width: 767px){
+            .box2 .inner{width: 50%; float: left;}
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box1">
+        내용....
+    </div>
+    
+    <hr>
+
+    <div class="box2">
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+    </div>
+
+    <div>
+        흠..
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+        ul,
+        li {
+            list-style-type: none;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        .head .logo {
+            width: 100%;
+
+            padding: 20px 0px;
+
+            background-image: url(img/bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .head .nav {
+            margin: 0 auto;
+            text-align: center;
+
+            overflow: hidden;
+
+        }
+
+        .head .group_nav {
+            background-color: black;
+        }
+
+        .head .group_nav .main_nav {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .head .group_nav .main_nav .nav_item {
+            float: left;
+            padding: 30px;
+            width: 25%;
+            box-sizing: border-box;
+        }
+
+        .head .group_nav .main_nav .nav_item a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .sec_img {
+            margin: 0 auto;
+            width: 1000px;
+            height: fit-content;
+            overflow: hidden;
+        }
+
+        .sec_img .sec_img_item {
+            width: 25%;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            float: left;
+            text-align: center;
+        }
+
+        .main {
+            position: relative;
+           
+            background-image: url(img/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .main .body_middle{    
+            position: relative;        
+            margin: 0 auto;
+            width: 700px;
+        }
+
+        .main .body_middle .main_item{            
+            text-align: center;
+        }
+        .main .body_middle .left_side{
+            position: absolute;
+            left: -210px;
+            top: 10px;
+        }
+
+        .main .body_middle .right_side{
+            position: absolute;
+            right: -210px;
+            top: 10px;
+        }
+
+        .watermark {
+            position: fixed;
+            padding: 10px;
+            background-color: red;
+            top: 0;
+            right: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="head">
+        <div class="logo"><img src="img/logo.jpg" alt="로고"></div>
+        <nav class="group_nav">
+            <ul class="main_nav">
+                <li class="nav_item"><a href="#">메뉴1</a></li>
+                <li class="nav_item"><a href="#">메뉴1</a></li>
+                <li class="nav_item"><a href="#">메뉴1</a></li>
+                <li class="nav_item"><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="sec_img">
+            <div class="sec_img_item">
+                <div><img src="img/item01.png" alt="이미지1"></div>
+                <div>iPhone</div>
+            </div>
+            <div class="sec_img_item">
+                <div><img src="img/item02.png" alt="이미지1"></div>
+                <div>iPot</div>
+            </div>
+            <div class="sec_img_item">
+                <div><img src="img/item03.png" alt="이미지1"></div>
+                <div>iPad</div>
+            </div>
+            <div class="sec_img_item">
+                <div><img src="img/item04.png" alt="이미지1"></div>
+                <div>iMac</div>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="body_middle">
+                <div class="main_item">
+                    <img src="img/ipad.jpg" alt="아이패드">
+                </div>
+                <aside class="left_side">
+                    <div><img src="img/side01.png" alt="사이드1"></div>
+                    <div><img src="img/side02.png" alt="사이드1"></div>
+                </aside>
+                <aside class="right_side">
+                    <div><img src="img/side03.png" alt="사이드1"></div>
+                    <div><img src="img/side04.png" alt="사이드1"></div>
+                </aside>
+            </div>
+            
+
+        </div>
+
+
+    </section>
+
+    <aside class="watermark">
+        <div>my!</div>
+    </aside>
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+
+.my-header{
+    background-color: #263238;
+    border-radius: 0px;
+}
+.my-header a{
+    color: white;
+    font-size: 15px;
+}
+.my-header .icon-bar{
+    background-color: white;
+}
+
+.my-header .dropdown-background li a{
+    background-color: #263238;
+}

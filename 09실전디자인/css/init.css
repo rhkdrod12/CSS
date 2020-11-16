@@ -1,0 +1,35 @@
+/* 1.웹폰트 선언 : 첫 시작시 웹폰트 지정을 일반적으로 한다. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+/* 2.디자인 시작시 전역 설정 */
+*{    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+body, html{
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    min-width: 320px;
+}
+img{
+    /* 이미지가 반응형으로 넣다보면 일그러질 확률이 높음 */
+    /* 길이는 100% 높이는 길이에 맞춰서 하도록 설정 */
+    max-width: 100%;
+    height: auto;   /* 사이즈가 변하면 높이는 넓이에 따라서 변경 */
+}
+input, textarea, button, select{
+    /* 
+    고유하게 적용되어 있는 form관련 요소들을 제거하여 
+    여러 브라우저에서 동일한 form관련 디자인이 보여지도록 처리    
+    */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance:none;
+    -ms-appearance:none;
+    appearance: none;
+}
+ul, li, ol, dl{
+    list-style-type: none;
+}
