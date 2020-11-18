@@ -1,5 +1,13 @@
 
+/* header 부분 */
 .my-header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 50;
+    min-width: 320px;
+
     background-color: #263238;
     border-radius: 0px;
 }
@@ -10,7 +18,357 @@
 .my-header .icon-bar{
     background-color: white;
 }
-
-.my-header .dropdown-background li a{
-    background-color: #263238;
+.navbar{margin-bottom: 0;}
+.my-header .navbar-brand{
+   padding: 10px 20px;
 }
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #364146;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #364146;
+    border-color: #337ab7;
+}
+.navbar-toggle{
+    border-width: 0.1px;
+    border-color: rgb(110, 110, 110);
+}
+.navbar-toggle:hover {
+    background-color: #364146;
+}
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu>li>a {
+        color: white;
+    }
+    .navbar-nav .open .dropdown-menu > li > a:hover {
+        background-color: #364146;
+    }
+}
+
+/* header 보정부분*/
+section{
+    margin-top: 50px;
+}
+
+.form-control{
+    border-radius: 0px;
+}
+.btn{
+    border-radius: 0px;
+}
+
+/* footer 부분 */
+.my-footer{
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+
+    width: 100%;
+    font-size: 13px;
+    background-color: #263238;
+
+    padding: 30px 0px;
+    margin-top: 70px;
+    color: wheat;
+}
+.my-footer .footer-menu{    
+    text-align: center;
+}
+.my-footer .footer-menu li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+.my-footer .footer-menu li a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 15px;
+}
+
+.my-footer .footer-copyright address{
+    margin: 0px;
+}
+
+
+.carousel-control.right, .carousel-control.left{
+    /* background-image: none; */
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0,0,0,0) 100%);
+    
+}   
+
+/* 물품소개 부분 */
+.prod-list{
+    border: 1px solid rgb(199, 199, 199);
+    padding: 5px;
+}
+.prod-list li{
+    padding: 5px;
+}
+.prod-box{   
+    display: block;
+    border: 1px solid rgb(199, 199, 199);
+    text-align: center;
+    position: relative;
+}
+.prod-box .arrow{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+   
+    background-color: #ccc;
+    color: white;
+
+    opacity: 1;
+}
+
+.prod-box .hover{
+    visibility: block;
+    width: 130px;
+    height: 40px;
+    /* line-height: 50px; */
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+        
+    background-color: #4288f1;
+    color: white;
+
+    /* 투명도 옵션 */
+    opacity: 0;
+}
+.prod-box:hover .arrow{
+    opacity: 0;
+}
+.prod-box:hover .hover{
+    opacity: 1;
+}
+
+.prod-box:hover{
+    border: 1px solid #4288f1;
+}
+
+.prod{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.prod-content{
+    overflow: hidden; 
+    padding: 20px 0px;
+}
+.prod .prod-img{
+    text-align: center;
+}
+.prod-info{
+    float: left;
+    /* width: 60%; */
+    text-align: left;
+}
+.prod-info span{
+    display: block;
+}
+.prod-price{
+    float: right;
+    /* width: 40%; */
+    text-align: right;
+}
+
+.prod{
+    margin: 10px 0;
+}
+.prod-color{
+    margin-top: -36px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+.prod-color-list{
+    overflow: hidden;       
+}
+.prod-color-item{
+    float: left;   
+    padding-right: 1px;    
+}
+
+.prod:hover .prod-color{   
+    opacity: 1;
+}
+.text-center{
+    overflow: hidden;
+    padding: 10px 0px;
+}
+.text-center .pagination{
+    margin: 0px;
+}
+.text-center button{
+    float: right;
+   
+}
+
+/* detail 부분 */
+.row{
+    height: fit-content;
+}
+.prod-detail-img{
+    text-align: center;
+}
+
+.prod-detail-info{
+    margin-bottom: 20%;
+}
+.prod-detail-title{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.prod-detail-price{
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.prod-detail-delivery{
+    color: #777777;
+}
+
+.total-price{
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.total-price .left{
+    float: left;
+    font-size: 20px;
+}
+
+.total-price .right{
+    float: right;
+    font-size: 30px;
+}
+
+.prod-detail-button{
+    overflow: hidden;
+}
+.prod-detail-button .left{
+    float: left;
+    width: 50%;
+}
+.prod-detail-button .left button{
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.reply-wrap{
+    border: 1px solid #ddd;
+    padding: 15px;
+    position: relative;
+    background-color: #f5f5f5;    
+    height: 100%;
+}
+.reply-content{
+    padding-left: 60px;
+}
+.reply-textarea{
+    margin-bottom: 10px;
+}
+.reply-content textarea{
+    width: 100%;
+    height: 100px;
+    transition-property: height;
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+    resize: none;
+}
+.reply-content textarea:focus{
+    height: 200px;
+    
+}
+.reply-content input{    
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.user-log{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.user-log img{
+    width: 40px;
+}
+.reply-group{
+    position: relative;
+    overflow: hidden;
+}
+.reply-group .reply-input{
+    float: left;
+}
+.reply-group button{
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 40px;
+}
+
+@media(max-width: 525px){
+    .reply-input{
+        width: 100%;
+    }
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+.reply-group small {
+    margin-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.reply-group a{
+    padding-left: 10px;
+    color: #777777;
+}
+
+/* 회원가입 */
+.join-title{
+    width: 250px;
+    text-align: center;
+    margin: 80px auto;
+    border-top: 1px solid #b9b7b7;
+    border-bottom: 1px solid #b9b7b7;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 10px;
+
+    /* box-shadow: 0px 10px 15px gray; */
+}
+
+.join-form{
+    margin: 0 auto;      
+    float: none;
+    padding: 25px 50px 50px 50px;
+    border: 1px solid b9b7b7;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(max-width:767px){
+    .join-form{
+        box-shadow: none;
+    }
+}
+
+
