@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- 부트스트랩 -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+ 
+     <!-- 사용자 css -->
+     <link rel="stylesheet" href="css/init.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/temp.css">
+
+     
+</head>
+<body>
+    
+    <header class="my-header">
+        <nav class="navbar>
+            <div class=" container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" width="30px"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">LOGIN<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" action="##">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>   
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-lg-9 tabs-style">
+                        <div class="login-title">
+                            내 정보 관리
+                        </div>
+
+                        <ul class="nav nav-pills tabs-basic2">
+                            <li class="active"><a data-toggle="pill" href="#tab1">tab1</a></li>
+                            <li><a data-toggle="pill" href="#tab2">tab2</a></li>
+                            <li><a data-toggle="pill" href="#tab3">Menu 2</a></li>
+                        </ul>
+    
+                        <div class="tab-content">
+                            <div id="tab1" class="tab-pane fade in active">                       
+                                <p class="m-header"></p>                                
+                                <img src="img/ipad.jpg" alt="아이패드"  >
+                            </div>
+                            <div id="tab2" class="tab-pane fade">
+                                <p class="m-header">*표시는 필수 사항입니다.</p>                              
+                                <form action="">
+                                    <table class="table test-table">
+                                        <tbody> <!-- 테이블의 몸체를 의미 -->
+                                            <tr class="m-control">
+                                                <td class="m-title">*ID</td>
+                                                <td><input type="text" class="form-control m-md"></td>                                                
+                                            </tr>
+                                            <tr class="m-control">
+                                                <td class="m-title">*이름</td>
+                                                <td><input type="text" class="form-control m-md"></td>                                                
+                                            </tr>
+                                            <tr class="m-control">
+                                                <td class="m-title">*비밀번호</td>
+                                                <td><input type="password"" class="form-control m-md"></td>                                                
+                                            </tr>
+                                            <tr class="m-control">
+                                                <td class="m-title">*비밀번호 확인</td>
+                                                <td><input type="password" class="form-control m-md"></td>                                                
+                                            </tr>                                           
+                                            <tr class="m-control">
+                                                <td class="m-title">*E-mail</td>
+                                                <td><input type="text" class="form-control m-md">
+                                                    @ <select class="form-control m-md" id="sel1">
+                                                    <option>naver.com</option>
+                                                    <option>daum.com</option>
+                                                    <option>gmail.com</option>                                                    
+                                                  </select>                                                
+                                                </td>                                                 
+                                            </tr>
+                                            <tr class="m-control">
+                                                <td class="m-title">*휴대폰</td>
+                                                <td>
+                                                    <input type="text" class="form-control m-sm" value="010"> - 
+                                                    <input type="text" class="form-control m-sm"> - 
+                                                    <input type="text" class="form-control m-sm">
+                                                </td>                                                                                              
+                                            </tr>
+                                            <tr class="m-control">
+                                                <td class="m-title">*주소</td>
+                                                <td><input type="text" class="form-control"></td>                                                
+                                            </tr>
+                                            <tr class="m-control">
+                                                <td class="m-title">*상세주소</td>
+                                                <td><input type="text" class="form-control"></td>                                                
+                                            </tr>                                            
+                                        </tbody>                                        
+                                    </table>
+                                    <div class="m-footer">
+                                        <button type="button" class="btn btn-default">목록</button>
+                                        <button type="button" class="btn btn-default">저장</button>
+                                    </div>
+
+                                </form>
+                                
+                            </div>
+                            <div id="tab3" class="tab-pane fade">
+                                <h3>tab3</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam.</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+    
+                </div>
+            </div>
+    
+        </section>
+
+        
+
+    </section>
+
+    <footer class="my-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="footer-copyright">
+                        <a href="#"><img src="img/logo.svg" alt="로고" width="20px"></a>
+                        Copyright 1999-2020 by Refsnes Data.<br>
+                        All Rights Reserved.<BR>
+                        W3Schools is Powered by W3.CSS.<BR>
+                        <address>Bootstrap. ALL RIGHT</address>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <ul class="footer-menu">
+                        <li><a href="#">유용한 정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
