@@ -1,0 +1,199 @@
+a{
+    display: inline-block;
+    text-decoration: none;    
+}
+section{
+    margin-top: 179px;
+}
+
+/* 헤더부분 */
+.my-header{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.my-header .main-logo{
+    margin: 0px auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+.main-nav{
+    background-color:  rgb(63, 63, 63);
+    width: 100%;
+}
+.main-nav .navbar .collapse {
+    padding: 0px;
+}
+.main-nav .navbar .collapse .nav{
+    margin: 0 auto;
+    float: none;
+    width: 50%;
+}
+.menu{    
+    margin: 0 auto;
+    margin-top: 5px;
+    border-bottom: 5px solid  rgb(63, 63, 63);
+    width: 20%;    
+    text-align: center;
+}
+.main-nav .navbar .collapse .nav .menu:hover{        
+    border-bottom: 5px solid white;    
+
+    transition-property: border-bottom;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+.menu a{
+    color: white;
+}
+.main-nav .navbar .collapse .nav .menu a:hover{
+    background-color:  rgb(63, 63, 63);
+}
+.navbar-toggle{
+    border: 1px solid rgb(207, 207, 207);
+}
+.navbar-toggle .icon-bar{
+    border: 1px solid rgb(207, 207, 207);
+}
+.m-hide{
+    display: none;
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 200px;
+    font-size: 20px;
+    justify-content: space-around;    
+}
+.login a{
+    color: black;
+    text-decoration: none;
+}
+
+/* 베너용 */
+.banner{
+    position: relative;
+}
+.banner .banner-content{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 350px;
+    
+}
+.banner-item{
+    color: white;
+    padding: 5px;
+    margin: 10px 0px;     
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+/* 상품용 */
+.prod-list{    
+    margin: 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.prod-item{
+    flex: 0 0 25%;    
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.prod-item .content{
+    color: black;
+}
+.prod-title{
+    font-size: 19px;    
+}
+.prod-item:hover .content-hover{
+    opacity: 1;
+}
+.content-hover{
+    position: absolute;
+    left: 0px;    
+    top: 0px;   
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    opacity: 0;
+    color: white;
+    font-weight: 800px;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+@media(min-width:767px) and (max-width:1024px){
+    .prod-item{
+        flex: 0 0 33%;   
+    } 
+    .sidebar{
+        opacity: 1;
+    }
+}
+@media(max-width:767px){
+    .login{
+        font-size: 10px;
+        flex-direction: column;
+        text-align: right;
+    }
+    .main-nav .navbar .collapse .nav{
+        width: 100%;
+    }
+    .menu{
+        width: 40%;
+    }
+    
+    .prod-item{
+        flex: 0 0 100%;   
+    } 
+    .sidebar{
+        opacity: 0;
+    }
+    .m-hide{
+        display: inline;
+    }
+    .login{
+        display: none;
+    }
+    .banner-content{
+        display: none;
+    }
+}
+
+/* side */
+
+.sidebar{
+    position: fixed;
+    z-index: 7;
+    right: 0px;
+    top: 400px;
+}
+
+.side-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    width: 80px;
+    height: 50px;
+    border-top: 1px solid rgb(163, 163, 163);
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.side-item div:nth-child(2){
+    font-size: 10px;
+}
+
